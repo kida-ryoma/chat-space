@@ -21,14 +21,24 @@
       .top-items{
         height: 20px;
         width: 260px;
-        background-color: #d8d8d8;
         display: flex;
         justify-content: space-between;
+        align-items: center;
         .top-items__name{
+          color: #ffffff;
         }
         
         .top-items__icons{
           width: 60px;
+          display: flex;
+          justify-content: flex-end;
+          .top-items__icons-edit{
+            margin-right: 5px;
+            color: #ffffff;
+          }
+          .top-items__icons-setting{
+            color: #ffffff;
+          }
         }
       }
     }
