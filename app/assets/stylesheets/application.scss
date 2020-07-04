@@ -26,6 +26,7 @@
         align-items: center;
         .top-items__name{
           color: #ffffff;
+          font-size: 16px;
         }
         
         .top-items__icons{
@@ -45,6 +46,25 @@
     .group-list{
       height: calc(100vh - 100px);
       background-color: #2f3e51;
+      .group-items{
+        display: flex;
+        .group-items__group-item{
+          height: 65px;
+          width: 100%;
+          .group-item__name{
+            margin: 20px 20px 5px 20px;
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 15px;
+          }
+          .group-item__message{
+            margin:  0 20px 40px 20px;
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 11px;
+          }
+        }
+      }
     }
   }
   /*ここまでサイドバー*/
