@@ -79,6 +79,34 @@
       height: 100px;
       width: 100%;
       border-bottom: 1px solid #eeeeee;
+      display: flex;
+      justify-content: space-between;
+      .group-info__details{
+        .details__group-name{
+          padding: 35px 0px 15px 40px;
+          color: #333333;
+          font-size: 20px;
+        }
+        .details__group-member{
+          color: #999999;
+          font-size: 12px;
+          padding-left: 40px;
+        }
+      }
+      .group-info__edit-btn-flame{
+        width: 112px;
+        .edit-btn{
+          width: 72px;
+          height: 40px;
+          margin-top: 28px;
+          text-align: center;
+          a{
+            color: #38aef0;
+            font-size: 16px;
+          }
+        }
+      }
+
     }
     .message-list{
       background-color: #fafafa;
