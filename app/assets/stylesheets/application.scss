@@ -171,6 +171,7 @@
           width: 100%;
           @include center($justify: space-between);
           background-color: #ffffff;
+          position: relative;
           .form-text{
             height: 50px;
             padding-left: 10px;
@@ -179,7 +180,8 @@
             border: none;
           }
           .form-img{
-            padding-right: 10px;
+            position: absolute;
+            right: 10px;
             .img-file{
               display: none;
             }
