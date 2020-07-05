@@ -15,19 +15,19 @@
     border-bottom: 1px solid #eeeeee;
     display: flex;
     justify-content: space-between;
-    .group-info__details{
-      .details__group-name{
+    .details{
+      &__group-name{
         padding: 35px 0px 15px 40px;
         color: #333333;
         font-size: 20px;
       }
-      .details__group-member{
+      &__group-member{
         color: #999999;
         font-size: 12px;
         padding-left: 40px;
       }
     }
-    .group-info__edit-btn-flame{
+    &__edit{
       width: 112px;
       .edit-btn{
         margin:28px 40px 0 0;
@@ -51,18 +51,18 @@
     width: 100%;
     .message-block-first{
       padding: 35px 0px 0px 40px;
-      .message-block__info{
+      .info{
         display: flex;
-        .info-name{
+        &__name{
           font-size: 16px;
           color: #333333;
         }
-        .info-data{
+        &__data{
           font-size: 12px;
           color: #999999;
         }
       }
-      .message-block__content{
+      &__content{
         margin-top: 12px;
         font-size: 14px;
         color: #434A54;
@@ -70,18 +70,18 @@
     }
     .message-block{
       padding: 46px 0px 0px 40px;
-      .message-block__info{
+      .info{
         display: flex;
-        .info-name{
+        &__name{
           font-size: 16px;
           color: #333333;
         }
-        .info-data{
+        &__data{
           font-size: 12px;
           color: #999999;
         }
       }
-      .message-block__content{
+      &__content{
         margin-top: 12px;
         font-size: 14px;
         color: #434A54;
@@ -98,19 +98,19 @@
       @include center($justify: space-between);
       margin: 10px 40px;
       width: 100%;
-      .form-content{
+      &__content{
         width: 100%;
         @include center($justify: space-between);
         background-color: #ffffff;
         position: relative;
-        .form-text{
+        &__text{
           height: 50px;
           padding-left: 10px;
           line-height: 50px;
           width: 100%;
           border: none;
         }
-        .form-img{
+        &__img{
           position: absolute;
           right: 10px;
           .img-file{
@@ -118,7 +118,7 @@
           }
         }
       }
-      .send{
+      &__send{
         height: 50px;
         padding: 0px 30px;
         margin-left: 15px;

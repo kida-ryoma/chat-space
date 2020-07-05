@@ -1,36 +1,38 @@
 .chat-main
   .group-info
-    .group-info__details
+    .details
       .details__group-name
         test
       .details__group-member
         Member:kida kosuke
-    .group-info__edit-btn-flame
+    .group-info__edit
       .edit-btn
         = link_to  "" do
           EDIT
+
   .message-list
     .message-block-first
-      .message-block__info
-        .info-name
+      .info
+        .info__name
           masa
-        .info-data
+        .info__data
           2020/07/05
-      .message-block__content
+      .message-block-first__content
         good morning!
     .message-block
-      .message-block__info
-        .info-name
+      .info
+        .info__name
           kosuke
-        .info-data
+        .info__data
           2020/07/04
       .message-block__content
         hello!
+        
   .message-form
     %form.form
-      .form-content
-        %input.form-text{type:  "text", placeholder: "type a message"}
-        %label.form-img
+      .form__content
+        %input.form__content__text{type:  "text", placeholder: "type a message"}
+        %label.form__content__img
           = icon('far', 'image')
           %input.img-file{type: "file"}
-      %input.send{type: "submit", value: "Send"}
+      %input.form__send{type: "submit", value: "Send"}

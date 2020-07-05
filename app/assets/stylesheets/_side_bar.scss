@@ -16,20 +16,19 @@
       height: 20px;
       width: 260px;
       @include center($justify: space-between);
-      .top-items__name{
+      &__name{
         color: #ffffff;
         font-size: 16px;
       }
-      
-      .top-items__icons{
+      &__icons{
         width: 60px;
         display: flex;
         justify-content: flex-end;
-        .top-items__icons-edit{
+        &--edit{
           margin-right: 5px;
           color: #ffffff;
         }
-        .top-items__icons-setting{
+        &--setting{
           color: #ffffff;
         }
       }
@@ -40,16 +39,16 @@
     background-color: #2f3e51;
     .group-items{
       display: flex;
-      .group-items__group-item{
+      .group-item{
         height: 65px;
         width: 100%;
-        .group-item__name{
+        &__name{
           margin: 20px 20px 5px 20px;
           color: #ffffff;
           font-weight: bold;
           font-size: 15px;
         }
-        .group-item__message{
+        &__message{
           margin:  0 20px 40px 20px;
           color: #ffffff;
           font-weight: bold;
