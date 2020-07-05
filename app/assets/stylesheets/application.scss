@@ -158,6 +158,44 @@
       background-color: #d2d2d2;
       height: 90px;
       width: 100%;
+      display: flex;
+      align-items: center;
+      .form{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px 40px;
+        width: 100%;
+        .form-content{
+          display: flex;
+          width: 100%;
+          justify-content: space-between;
+          align-items: center;
+          background-color: #ffffff;
+          .form-text{
+            height: 50px;
+            padding-left: 10px;
+            line-height: 50px;
+            width: 100%;
+            border: none;
+          }
+          .form-img{
+            padding-right: 10px;
+            .img-file{
+              display: none;
+            }
+          }
+        }
+        .send{
+          height: 50px;
+          padding: 0px 30px;
+          margin-left: 15px;
+          font-size: 16px;
+          color: #ffffff;
+          background-color: #38aef0;
+          line-height: 50px;
+        }
+      }
     }
   }
 }

@@ -27,3 +27,10 @@
       .message-block__content
         hello!
   .message-form
+    %form.form
+      .form-content
+        %input.form-text{:type => "text", :placeholder => "type a message"}
+        %label.form-img
+          = icon('far', 'image')
+          %input.img-file{:type => "file"}
+      %input.send{:type => "submit", :value => "Send"}
