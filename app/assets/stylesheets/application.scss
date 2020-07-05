@@ -7,6 +7,13 @@
   width: 100vw;
   height: 100vh;
   display: flex;
+
+@mixin center($display: flex, $justify: center, $align: center){
+  display: $display;
+  justify-content: $justify;
+  align-items: $align;
+}
+
   /*ここからサイドバー*/
   .side-bar{
     width: 300px;
@@ -15,15 +22,11 @@
     .user-name{
       height: 100px;
       background-color: #253141;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include center();
       .top-items{
         height: 20px;
         width: 260px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include center($justify: space-between);
         .top-items__name{
           color: #ffffff;
           font-size: 16px;
@@ -161,16 +164,12 @@
       display: flex;
       align-items: center;
       .form{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include center($justify: space-between);
         margin: 10px 40px;
         width: 100%;
         .form-content{
-          display: flex;
           width: 100%;
-          justify-content: space-between;
-          align-items: center;
+          @include center($justify: space-between);
           background-color: #ffffff;
           .form-text{
             height: 50px;
