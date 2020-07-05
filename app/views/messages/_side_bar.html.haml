@@ -4,9 +4,9 @@
       .top-items__name 
         name
       .top-items__icons 
-        %a.top-items__icons-edit{ href: ""}
+        = link_to "", class: "top-items__icons-edit" do
           = icon("far", "edit")
-        %a.top-items__icons-setting{ href: ""}
+        = link_to "", class: "top-items__icons-setting" do
           = icon("fas", "cog")
 
   .group-list
