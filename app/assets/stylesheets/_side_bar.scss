@@ -24,6 +24,9 @@
         width: 60px;
         display: flex;
         justify-content: flex-end;
+        a{
+          color: #ffffff;
+        }
         &--edit{
           margin-right: 5px;
           color: #ffffff;
@@ -39,6 +42,9 @@
     background-color: #2f3e51;
     .group-items{
       display: flex;
+      a{
+        text-decoration: none;
+      }
       .group-item{
         height: 65px;
         width: 100%;

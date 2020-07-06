@@ -3,16 +3,18 @@
     .top-items
       .top-items__name 
         name
-      .top-items__icons 
-        = link_to "", class: "top-items__icons--edit" do
-          = icon("far", "edit")
-        = link_to "", class: "top-items__icons--setting" do
-          = icon("fas", "cog")
+      %ul.top-items__icons
+        %li.top-items__icons--edit
+          = link_to "#" do
+            = icon("far", "edit")
+        %li.top-items__icons--setting
+          = link_to "" do
+            = icon("fas", "cog")
 
   .group-list
     .group-items
-      .group-item
-        .group-item__name
+      = link_to "#", class:"group-item" do
+        %p.group-item__name
           techcamp
-        .group-item__message
+        %p.group-item__message
           まだメッセージがありません
