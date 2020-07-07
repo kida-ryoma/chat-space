@@ -63,10 +63,13 @@
           color: #999999;
         }
       }
-      &__content{
+      &__contents{
         margin-top: 12px;
         font-size: 14px;
         color: #434A54;
+        &__image{
+          display: block;
+        }
       }
     }
     }
