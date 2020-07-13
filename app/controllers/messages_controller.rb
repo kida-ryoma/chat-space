@@ -30,3 +30,9 @@ class MessagesController < ApplicationController
     params.require(:message).permit(:text,:image).merge(user_id: current_user.id)
   end
 end
+
+
+
+#〜省略〜
+
+
